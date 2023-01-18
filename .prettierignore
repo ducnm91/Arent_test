@@ -1,0 +1,7 @@
+#Tip! Base your .prettierignore on .gitignore and .eslintignore (if you have one).
+build/
+node_modules/
+package-lock.json
+yarn.lock
+package.json
+.husky/
