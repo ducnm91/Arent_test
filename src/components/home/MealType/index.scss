@@ -1,0 +1,17 @@
+@import "../../../assests/scss/variables";
+
+.meal-type {
+  padding-top: 22px;
+  padding-bottom: 25px;
+  .meal-item {
+    width: 116px;
+    height: 134px;
+    background: url(../../../assests/img/01.png) 0 0 no-repeat;
+    margin: 0 42px;
+    cursor: pointer;
+  }
+  .meal-name {
+    color: $color-light;
+    font: 400 20px/24px  $font_secondary;
+  }
+}

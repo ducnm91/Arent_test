@@ -1,9 +1,12 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import AchievementRate from "components/home/AchievementRate";
+import BodyFatPercentageGraph from "components/home/BodyFatPercentageGraph";
+import MealType from "components/home/MealType";
+import MealHistory from "components/home/MealHistory";
 
 function HomePage() {
-  const { t } = useTranslation(["translation"]);
   return (
     <>
       <HelmetProvider>
@@ -11,7 +14,14 @@ function HomePage() {
           <title>Home page</title>
         </Helmet>
       </HelmetProvider>
-      <h2>{t("Welcome to React")}</h2>
+      <div className="home-page">
+        <div className="d-flex">
+          <AchievementRate />
+          <BodyFatPercentageGraph/>
+        </div>
+        <MealType />
+        <MealHistory />
+      </div>
     </>
   );
 }
