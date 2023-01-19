@@ -1,0 +1,33 @@
+@import "../../../assests/scss/variables";
+
+.my-diary {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  .list-item {
+    margin: 0 -6px;
+  }
+  .item {
+    width: 231px;
+    height: 231px;
+    margin: 0 6px 12px;
+    padding: 16px;
+    border: 2px solid #707070;
+    color: $color_dark_500;
+    &-date {
+      font: 400 18px/22px $font_secondary;
+      letter-spacing: 0.09px;
+    }
+    &-title,
+    &-text {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0.06px;
+      margin-bottom: 0;
+    }
+  }
+  .btn-load-more {
+    margin-top: 28px;
+  }
+}

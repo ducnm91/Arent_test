@@ -1,0 +1,45 @@
+@import "../../../assests/scss/variables";
+
+.recommended {
+  padding:  56px 0;
+  .my-container {
+    overflow: hidden;
+  }
+  .suggestion {
+    &-list {
+      margin: 0 -16px;
+    }
+    &-item {
+      width: 25%;
+      padding: 0 16px;
+      &-inner {
+        padding: 24px 8px;
+        background: $color_dark_600;
+      }
+      &-title {
+        font: 400 22px/27px $font_secondary;
+        position: relative;
+        a {
+          color: $color_primary_300;
+        }
+        &::after {
+          content: '';
+          display: block;
+          width: 56px;
+          height: 1px;
+          background: $color_light;
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &-text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color_light;
+      }
+    }
+  }
+}

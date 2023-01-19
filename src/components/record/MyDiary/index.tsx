@@ -60,7 +60,7 @@ const mockData = [
   }
 ];
 
-const MealHistory = () => {
+const MyDiary = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [mealsData, setMealsData] = useState<MealItemHistory[]>([]);
 
@@ -81,26 +81,32 @@ const MealHistory = () => {
   }, []);
 
   return (
-    <div className="meal-history">
+    <div className="my-diary">
       <div className="my-container">
         {isLoading && <p>...Loading</p>}
         {!isLoading && (
           <>
             {!mealsData.length && <p>No data!</p>}
             {mealsData.length && (
-              <div className="meal-list">
-                <div className="d-flex flex-wrap">
+              <>
+                <div className="list-item d-flex flex-wrap">
                   {mealsData.map(item => (
-                    <div className="meal-item" key={item.id}>
-                      <img src={item.image} alt={item.type} />
-                      <span className="meal-text">{item.date} {item.type}</span>
+                    <div className="item" key={item.id}>
+                      <p className="item-date mb-2">
+                        2021.05.21<br />23:25
+                      </p>
+                      <h3 className="item-title">私の日記の記録が一部表示されます。</h3>
+                      <p className="item-text">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト…
+                      </p>
                     </div>
                   ))}
                 </div>
                 <div className="d-flex justify-content-center">
                   <button type="button" className="btn btn-primary btn-load-more" onClick={loadMore}>記録をもっと見る</button>
                 </div>
-              </div>
+              </>
             )}
           </>
         )}
@@ -109,4 +115,4 @@ const MealHistory = () => {
   )
 };
 
-export default MealHistory;
+export default MyDiary;
