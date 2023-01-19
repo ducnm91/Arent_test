@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { useTranslation } from "react-i18next";
 import AchievementRate from "components/home/AchievementRate";
 import BodyFatPercentageGraph from "components/home/BodyFatPercentageGraph";
 import MealType from "components/home/MealType";

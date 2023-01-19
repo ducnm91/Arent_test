@@ -1,0 +1,43 @@
+@import "../../../../assests/scss/variables";
+
+.main-dropdown-menu {
+  &.show {
+    .icon-open {
+      display: none;
+    }
+    .icon-close {
+      display: block;
+    }
+  }
+  .icon-close {
+    display: none;
+  }
+  .btn {
+    padding: 7px;
+    background: transparent;
+    border: none;
+    &::after {
+      display: none;
+    }
+    &:focus {
+      background: transparent;
+    }
+  }
+  .dropdown-menu {
+    padding: 0;
+    width: 280px;
+    a {
+      padding: 23px 32px;
+      background: $color_gray_400;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      color: $color_light;
+      border-bottom: 1px solid rgba($color: $color_dark_600, $alpha: .25);
+      border-top: 1px solid rgba($color: $color_light, $alpha: .15);
+      &:hover {
+        color: $color_primary_300;
+      }
+    }
+  }
+}

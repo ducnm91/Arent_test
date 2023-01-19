@@ -1,0 +1,27 @@
+@import "../../../assests/scss/variables";
+
+.main-footer {
+  background: $color_dark_500;
+  padding: 56px 20px;
+  margin-top: 64px;
+  .footer-nav {
+    width: 960px;
+    margin: 0 auto;
+    li {
+      margin-right: 45px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.033px;
+      color: $color_light;
+      &:hover {
+        color: $color_primary_300;
+      }
+    }
+  }
+}

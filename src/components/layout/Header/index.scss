@@ -1,0 +1,27 @@
+@import "../../../assests/scss/variables";
+
+.main-header {
+  background: $color_dark_500;
+  &-inner {
+    width: 960px;
+    padding: 12px 0;
+    margin: 0 auto;
+  }
+  .header-nav {
+    li {
+      margin-right: 28px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 23px;
+      color: $color_light;
+      &:hover {
+        color: $color_primary_300;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../../assests/scss/variables";
+
+.my-exercise {
+  color: $color_light;
+  &-inner {
+    background: $color_dark_500;
+    padding: 16px 24px;
+  }
+  &-title {
+    font: 400 15px/18px $font_secondary;
+    letter-spacing: 0.15px;
+  }
+  &-date {
+    font: 400 22px/27px $font_secondary;
+    letter-spacing: 0.11px;
+  }
+  .exercise-list {
+    margin: 0 -20px;
+    max-height: 204px;
+    overflow-x: auto;
+  }
+  .exercise-item {
+    width: 50%;
+    padding: 0 20px;
+    margin-bottom: 8px;
+    &-inner {
+      padding-left: 16px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid $color_gray_400;
+    }
+  }
+  .item-title {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.075px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: $color_light;
+      position: absolute;
+      left: -16px;
+      top: 50%;
+      transform: translateX(-2px);
+    }
+  }
+  .item-date {
+    font: 400 18px/22px $font_secondary;
+    color: $color_primary_300;
+    letter-spacing: 0.09px;
+  }
+  .item-no {
+    font: 400 15px/18px $font_secondary;
+    color: $color_primary_300;
+    letter-spacing: 0.075px;
+  }
+}
