@@ -3,8 +3,8 @@ import "./index.scss";
 
 const BodyFatPercentageGraph = () => {
   return (
-    <div className="body-fat-percentage-graph">
-      <img src="/img/02.png" alt="" />
+    <div className="body-fat-percentage-graph text-center">
+      <img src="/img/main_graph.png" alt="" />
     </div>
   )
 };

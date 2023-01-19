@@ -17,13 +17,13 @@ const Header = () => (
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="d-flex align-items-center">
+            <Link to="/my-record" className="d-flex align-items-center">
               <img src="/img/icons/icon_challenge.png" alt="" className="me-2" />
               チャレンジ
             </Link>
           </li>
           <li>
-            <Link to="/form" className="d-flex align-items-center">
+            <Link to="/health" className="d-flex align-items-center">
               <img src="/img/icons/icon_info.png" alt="" className="me-2" />
               お知らせ
             </Link>
